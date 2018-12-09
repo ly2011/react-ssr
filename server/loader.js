@@ -18,6 +18,7 @@ import manifest from '../build/asset-manifest.json'
 
 // Some optional Redux functions related to user authentication
 // import { setCurrentUser, logoutUser } from '../src/modules/auth'
+import { fetchBookList } from '../src/redux/actions/book-list'
 
 // LOADER
 export default (req, res) => {
@@ -61,7 +62,9 @@ export default (req, res) => {
       // store.dispatch(logoutUser())
     }
 
-    console.log('server - cookies:  ', req.cookies)
+    store.dispatch(fetchBookList())
+
+    // console.log('server - cookies:  ', req.cookies)
 
     const context = {}
     const modules = []

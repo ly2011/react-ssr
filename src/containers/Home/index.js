@@ -14,9 +14,6 @@ class Home extends PureComponent {
       size: 20
     }
   }
-  static fetch(store) {
-    return store.dispatch(fetchBookList({ page: 1, size: 20 }))
-  }
 
   componentDidCatch(error, info) {
     // 在这里可以做异常上报

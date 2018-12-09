@@ -1,3 +1,5 @@
+import { getTopics } from '../../api'
+
 export const booklist = result => ({
   type: 'BOOKLIST',
   data: result
@@ -9,6 +11,11 @@ export const fetchBookList = params => {
   }
 
   return async (dispatch, getState) => {
-    setTimeout(() => dispatch(booklist(books)), 1000)
+    // setTimeout(() => dispatch(booklist(books)), 1000)
+    getTopics(params)
+      .then(res => {
+        dispatch(booklist(books))
+      })
+      .catch(err => {})
   }
 }

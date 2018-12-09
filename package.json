@@ -23,21 +23,19 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "server": "cross-env NODE_ENV=production node ./server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"],
+  "_moduleAliases": {
+    "@": "src"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/plugin-proposal-class-properties": "^7.2.1",
@@ -51,6 +49,10 @@
     "cookie-parser": "^1.4.3",
     "cross-env": "^5.2.0",
     "forcedomain": "^1.0.0",
-    "ignore-styles": "^5.0.1"
+    "ignore-styles": "^5.0.1",
+    "module-alias": "^2.1.0",
+    "querystring": "^0.2.0",
+    "react-app-rewire-aliases": "^0.2.0",
+    "react-app-rewired": "^1.6.2"
   }
 }

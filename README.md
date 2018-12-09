@@ -30,8 +30,12 @@ yarn start
 yarn build && yarn serve
 ```
 
-##
-
 ## 注意点
 
 1. `connected-react-router` 要使用 `4.5.0` 版本，5.0 版本暂时报错
+
+## 参考文档
+
+1. [cra-ssr](https://github.com/cereallarceny/cra-ssr)
+2. [react-koa2-ssr](https://github.com/yangfan0095/react-koa2-ssr)
+3. [react-ssr-boilerplate](https://github.com/justemit/react-ssr-boilerplate)
